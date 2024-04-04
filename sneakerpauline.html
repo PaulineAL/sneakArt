@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="/script.js" defer></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>                
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js" integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+  </script>
+    <link href="path/to/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary-bs-red">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index1.html">Accueil</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="quisommenous.html">SneakArt World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="cart-icon" onmouseover="openPopup()"><img src="panier.png" class="bouton2" alt="Panier" /></button>
+            </li>
+              <div class="popup-container" id="popup">
+                  <span class="popup-close" onclick="closePopup()">&times;</span>
+                  <div class="popup-content">
+                      <div class="popup-title">Votre Panier</div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>Parc Harmonie</span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>Parc Luminosa </span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      
+                     
+                  </div>
+                  <div class="popup-actions">
+                    <button type="button" class="btn btn-danger" onclick="proceedToCheckout()">Commander</button>
+                    <br> <!-- Ajoute un petit espace entre les deux boutons -->
+                    <button type="button" class="btn btn-continue" onclick="continueShopping()">Continuer les achats</button>
+
+                </div>
+              </div>
+              
+              <script>
+                  function openPopup() {
+                      document.getElementById('popup').style.display = 'block';
+                  }
+              
+                  function closePopup() {
+                      document.getElementById('popup').style.display = 'none';
+                  }
+              
+                  function proceedToPayment() {
+                      alert('Redirection vers la page de paiement...');
+                      closePopup();
+                  }
+              </script>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+
+
+
+
+
+  <section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><div id="conteneur">
+              <svg xmlns="http://www.w3.org/2000/svg" id="produit-svg" viewbox="0 0 1200 1200">
+                <path id="product-shape" d="M1150.61 508.75v.01s-38.97 40.49-79.14 30.28c0 0-.68-14.3 14.98-28.6s42.58-28.93 48.35-24.68c-1.5-2.05-2.4-3.24-2.4-3.24s-19.74-8.17-17.36-9.87c2.38-1.7-4.08-17.36-4.08-17.36s-5.45-12.94-9.87-25.19c-1.7-14.3-23.83-42.89-23.83-42.89s-18.38-10.55-25.87-19.06c-7.49-8.51-20.09-1.36-20.09-1.36s-26.55 15.15-54.81 32.17c-28.26 17.02-62.81 9.7-62.81 9.7l-48.33-14.12-140.77-79.32s-30.31-1.2-44.61-1.2c-51.49 0-177.87 70.64-177.87 70.64l-124.09 58.47-164.09 78.89h45.62c14.64 14.64-6.81 20.77-6.81 20.77l-105.19 37.45s-56.85 32-70.81 51.06 0 28.26 0 28.26c7.83 15.66 66.38 18.72 99.06-1.36s51.74-12.6 51.74-12.6 48 12.26 72.85 32.34 91.91 0 91.91 0 28.21-9.37 59.85-19.56c0 0 46.7-61.12 113.08-91.42 66.38-30.3 83.4-37.79 179.4-38.81 94.64 7.15 171.23 61.96 171.23 61.96s14.3 13.25 0 15.81c11.32 1.06 21.11 2.74 27.58 5.29 29.28 11.57 93.28-11.21 93.28-11.21s43.57-21.81 60.94-22.83c29.28 1.7 69.11-16.68 69.79-32 .34-7.54-8.15-22.83-16.86-36.42ZM374.96 634.02s-75.23-4.09-81.36-16.68c-6.13-12.6-97.02-5.45-97.02-5.45s-45.96 11.23-50.72-.68l14.98-16.68s114.38-38.47 176.34-34.72c61.96 3.74 93.96 12.26 99.06 33.02s-11.57 37.79-61.28 41.19ZM537 556.4c-9.34 2.92-30.55 10.02-46.3 3.15-5.95-2.6-41.13-16.73-76.6-21.87-34.84-5.05-69.1-6.09-76.94-9.53 0 0-33.36-7.49 0-22.81s106.89-14.3 106.89-14.3 94.98 14.3 103.49 35.4c8.51 21.11-10.55 29.96-10.55 29.96Zm161.02-52.42s-8.85 10.21-51.74 5.79-158.98-46.64-172.94-45.28c0 0-32.68-5.45-9.87-21.79 22.81-16.34 116.77-5.79 116.77-5.79s90.04 13.96 106.98 38.47c16.94 24.51 10.81 28.6 10.81 28.6Zm161.02 24.17c-32.68-12.94-128.34-67.4-128.34-67.4l-125.62-54.13s-30.6-16.68-3.72-29.62c26.87-12.94 97.74-3.06 97.74-3.06s99.01 19.74 176.96 104.17c17.7 18.38 20.09 44.6 20.09 44.6s-4.43 18.38-37.11 5.45Zm161.36-80.34s7.83-11.57 41.87-12.94 39.49 8.85 39.49 8.85 7.49 16.45-2.38 23.21c-9.87 6.75-25.19 5.39-25.19 5.39s-62.3-11.91-53.79-24.51Zm-91.23 20.08c21.45-4.09 53.45 6.13 53.45 6.13l41.19 12.6s15.32 8.85 13.96 18.72c-1.36 9.87-27.91 27.42-27.91 27.42s-26.55 18.57-48.68 1.02-32-37.63-32-37.63-21.45-24.17 0-28.26Zm99.4 128.68-72.85 5.45c-7.45.56-20.09-8.76-12.94-21.11 27.57-38.81 44.94-32.68 44.94-32.68s40.51 9.87 50.13 27.23c9.62 17.36-9.28 21.11-9.28 21.11Z" class="cls-1"/>
+                <path id="product-shape2" d="M43.55 596.79s-3.57 6.43 2.04 7.45c0 0-12.97 43.53-3.16 50.3s22.45 9.03 35.27 6.56c7.34 8.38 30.48 10.78 30.48 10.78s39.12.55 55.23-7.66 29.35-16.01 34.72-16.61 13.77-4.65 25.4-2.94 46.52 15.78 46.52 15.78 28.56 13.45 30.34 17.49 22.71 9.47 34.98 8.93 42.51-3.87 64.01-11.1 52.78-17.38 52.78-17.38 79.04-25.03 86.19-25.37 40.51.33 58.89 8.84 88.51 10.56 99.4 6.48 86.13-36.43 106.55-40.51 112.68-1.89 112.68-1.89 22.89 1.84 30.85 7.14 81.31-4.62 101.15-18.38c19.84-13.76 49.79-17.51 49.79-17.51s59.57-3.4 69.79-32c24.17 6.47 10.89 80.68 10.89 80.68l-30.98 61.01s-34.04 33.29-47.66 37.37l-42.89 26.55s-12.94-.68-12.6-6.47-8.51 10.89-8.51 10.89-151.49-14.98-178.38 4.77c-11.57-16.34-18.72-10.55-18.72-10.55l-7.49 10.55s-55.49-21.11-103.83-10.55-33.02 5.45-33.02 5.45-8.51-11.23-10.89-10.55-7.49-1.36-13.96 10.55c-9.87-.34-39.42-10.21-79.11-5.11s-57.06 8.17-67.61 14.64-11.57-7.15-11.57-7.15-12.94-2.3-16.34 8.89c-9.87 0-136.51-18.08-186.55-1.4-8.51-11.23-14.3-11.23-14.3-11.23s-3.74-3.06-8.51 6.81c-8.17-.68-130.38-32.34-151.49-30.98-7.15-7.15-8.85-3.4-8.85-3.4s-71.49-20.43-83.06-34.72-18.72-20.09-19.4-44.94 7.15-48.6 20.94-49.49Z" class="cls-1"/>
+                    </svg>
+                    <img id="background-image" src="https://cdn.glitch.global/2b1aa40f-3533-4bc6-93c1-ec2541e9683f/sneakart_custom .png?v=1711899813485" alt="">
+                  </div>
+                  </div>
+              <div class="col-md-6">
+              <h1 class="display-6 mb-5 fw-bolder">Parc Luminosa</h1>
+              <p> Sneakers - Cuir  imprimé par Julio le parc - femme - homme </p>
+              <span>750 €</span><br>
+
+          
+              
+              <p class="lead" style="margin-top: 10px;">Dans une fusion dynamique de l'art et de la mode, l'Est et l'Ouest se rencontrent dans une collaboration distinctive entre Julio Le Parc et SneakArt. Cette paire célèbre le lien interculturel en intégrant la profondeur optique de Le Parc avec l'iconique audace de SneakArt. La sneaker phare, réinventée ici, se pare d'une paire inspirée par les motifs cinétiques, évoquant les jeux de lumière et mouvement caractéristiques de l'artiste. Avec son design moderne et son cuir de qualité, cette pièce devient l'expression parfaite de la rencontre entre innovation et tradition, offrant une pièce essentielle à la garde-robe contemporaine.</p>
+              
+              <div>
+                  
+                <div class="couleur">
+                  <h4>Coque de la chaussure</h4>
+                      <div class="colors">
+                    <div class="color" style="background-color: #434695" data-hex="#434695"></div>
+                      <div class="color" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color" style="background-color: #0b836d" data-hex="#0b836d"></div>
+                      <div class="color" style="background-color: #36964f" data-hex="#36964f"></div>
+                      <div class="color" style="background-color: #61b049" data-hex="#61b049"></div>
+                      <div class="color" style="background-color: #fee901" data-hex="#fee901"></div>
+                      <div class="color" style="background-color: #f2a124" data-hex="#f2a124"></div>
+                      <div class="color" style="background-color: #e65438" data-hex="#e65438"></div>
+                      <div class="color" style="background-color: #e43e3d" data-hex="#e43e3d"></div>
+                      <div class="color" style="background-color: #d63f5d" data-hex="#d63f5d"></div>
+                      <div class="color" style="background-color: #853336" data-hex="#853336"></div>
+                      <div class="color" style="background-color: #572431" data-hex="#572431"></div>
+                      <div class="color" style="background-color: #3f2b5d" data-hex="#3f2b5d"></div>
+                      </div>
+                    </div>
+                    <hr>
+                  <div class="couleur">
+                    <h4>Semelle de la chaussure</h4>
+                    <div class="colors">
+                     <div class="color2" style="background-color: #434695" data-hex="#434695"></div>
+                      <div class="color2" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color2" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color2" style="background-color: #0b836d" data-hex="#0b836d"></div>
+                      <div class="color2" style="background-color: #36964f" data-hex="#36964f"></div>
+                      <div class="color2" style="background-color: #61b049" data-hex="#61b049"></div>
+                      <div class="color2" style="background-color: #fee901" data-hex="#fee901"></div>
+                      <div class="color2" style="background-color: #f2a124" data-hex="#f2a124"></div>
+                      <div class="color2" style="background-color: #e65438" data-hex="#e65438"></div>
+                      <div class="color2" style="background-color: #e43e3d" data-hex="#e43e3d"></div>
+                      <div class="color2" style="background-color: #d63f5d" data-hex="#d63f5d"></div>
+                      <div class="color2" style="background-color: #853336" data-hex="#853336"></div>
+                      <div class="color2" style="background-color: #572431" data-hex="#572431"></div>
+                      <div class="color2" style="background-color: #3f2b5d" data-hex="#3f2b5d"></div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <br>
+
+              <div class="d-flex align-items-center gap-3">
+                <div class="dropdown">
+                  <button type="button" class="btn btn-danger" id="sizeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Taille
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="sizeDropdown">
+                    <li><a class="dropdown-item" href="#">36</a></li>
+                    <li><a class="dropdown-item" href="#">37</a></li>
+                    <li><a class="dropdown-item" href="#">38</a></li>
+                    <li><a class="dropdown-item" href="#">39</a></li>
+                    <li><a class="dropdown-item" href="#">40</a></li>
+                    <li><a class="dropdown-item" href="#">41</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-danger">Ajouter</button>
+              </div>
+              
+                <div class="d-flex justify-content-left gap-3">
+                  <span class="rating">★★★★☆</span>
+                </div>
+              </div>
+
+
+
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+
+
+ <!-- Élément pour l'espace -->
+             
+              <div class="d-flex justify-content-around">
+                <img src="image1.png" class="rounded custom-img-size" alt="...">
+                <img src="leparc.png" class="rounded custom-img-size" alt="...">
+                <img src="image2.png" class="rounded custom-img-size" alt="...">
+            </div>
+            
+ 
+  <!-- Élément pour l'espace -->  
+
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+              <h2 class="fw-bolder mb-4 mt-4">Avis Clients </h2>
+                <div class="avis-body">
+                  <h5 class="avis-title">Marie-Claire</h5>
+                  <p class="avis-text">"Un mariage parfait entre l'art et la mode. Ces chaussures sont une œuvre d'art à porter, alliant esthétique unique et confort." </p>
+                </div><span class="rating">★★★★★</span></p>
+                <div class="avis-body">
+                  <h5 class="avis-title">Sarah</h5>
+                  <p class="avis-text"> "Des chaussures captivantes qui attirent l'attention à chaque pas. Confortables et originales, un vrai coup de cœur !"</p>
+                </div><span class="rating">★★★★☆</span></p> 
+                <div class="avis-body">
+                  <h5 class="avis-title">Alexandre</h5>
+                  <p class="avis-text">"Un hommage visuel réussi à l'œuvre de Julio Le Parc. Bien que très originales, j'aurais espéré un peu plus de confort et de durabilité." </p>
+                </div><span class="rating">★★★★★</span></p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  
+  <br></br>
+  <section class="">
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">SneakArt</h5>
+
+            <p>
+              "L’inspiration peut surgir n’importe où et n’importe quand. D’un élément d'architecture, d’un objet, d’un motif ou même simplement de la manière dont une personne se déplace. Si vous gardez les yeux ouverts, il y a toujours quelque chose à regarder qui va être inspirant."
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Découvrir</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-body">Notre collection</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Support</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-body">Aide</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Mentions légales</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #efeff0;">
+        © 2023 Sara Zamoumi Ouared
+
+      </div>
+
+    </footer>
+
+    <!-- Footer -->
+  </section>
+
+
+
+  </section>
+</body>
+
+</html>

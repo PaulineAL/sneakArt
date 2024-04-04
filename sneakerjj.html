@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="/script.js" defer></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>                
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js" integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+  </script>
+    <link href="path/to/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary-bs-red">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index1.html">Accueil</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="quisommenous.html">SneakArt World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="cart-icon" onmouseover="openPopup()"><img src="panier.png" class="bouton2" alt="Panier" /></button>
+            </li>
+              <div class="popup-container" id="popup">
+                  <span class="popup-close" onclick="closePopup()">&times;</span>
+                  <div class="popup-content">
+                      <div class="popup-title">Votre Panier</div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>Parc Harmonie</span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>Parc Luminosa </span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      
+                     
+                  </div>
+                  <div class="popup-actions">
+                    <button type="button" class="btn btn-danger" onclick="proceedToCheckout()">Commander</button>
+                    <br> <!-- Ajoute un petit espace entre les deux boutons -->
+                    <button type="button" class="btn btn-continue" onclick="continueShopping()">Continuer les achats</button>
+
+                </div>
+              </div>
+              
+              <script>
+                  function openPopup() {
+                      document.getElementById('popup').style.display = 'block';
+                  }
+              
+                  function closePopup() {
+                      document.getElementById('popup').style.display = 'none';
+                  }
+              
+                  function proceedToPayment() {
+                      alert('Redirection vers la page de paiement...');
+                      closePopup();
+                  }
+              </script>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+
+
+
+
+
+  <section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+              <div id="conteneur">
+              <svg id="produit-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Calque 1" viewBox="0 0 1199.59 1200.93">
+                <path id="product-shape" d="M117.94 590.79s17.79-22.55 40.85-21.11c25.75 1.62 59.85 19.81 110.85 12.21 12.43-1.85 39.96-45.57 39.96-46.94s-58.55 10.21-74.21-42.21c-15.66-52.43-24.85-61.28-75.57-50.04l-6.21 12.51s21.32 14.6 21.45 36.94-19.02 36.77-23.36 39.32-15.83 4.98-26.17 4.21c0 0-10.04 47.53-7.57 55.11Z"/>
+                <path id="product-shape2" d="M1092.66 704.32s13.02 8.17 17.11 35.49 9.96 42.13-33.19 56.94c-43.15 14.81-167.49 48-241.53 50.55s-138.89 3.57-216.17.34-179.06-5.19-261.53-6.21-124.34-2.55-165.96-4.09-71.74-3.83-83.49-6.64-28.6-8.94-27.06-44.43-4.34-64.6 23.49-79.91c0 0 176.02 6.75 237.45 12.77 62.55 6.13 165.19 16.09 186.64 19.4s81.96 9.96 122.3 11.74 133.79 7.66 228-3.57 124.34-17.11 139.91-20.68c15.57-3.57 69.39-26.09 74.04-21.7Z"/>
+                    </svg>
+                    <img id="background-image" src="https://cdn.glitch.global/a5d3bb80-2ec3-49ac-bdbd-2e54ce0fdfc5/chaussure2j.png?v=1712238266996" alt="">
+                  </div>
+                  </div>
+              <div class="col-md-6">
+              <h1 class="display-6 mb-5 fw-bolder">Parc Harmonie</h1>
+              <p> Sneakers - Cuir  imprimé par Julio le parc - femme - homme </p>
+              <span>670 €</span><br>
+
+          
+              
+              <p class="lead" style="margin-top: 10px;">Dans une fusion dynamique de l'art et de la mode, l'Est et l'Ouest se rencontrent dans une collaboration distinctive entre Julio Le Parc et SneakArt. Cette paire célèbre le lien interculturel en intégrant la profondeur optique de Le Parc avec l'iconique audace de SneakArt. La sneaker phare, réinventée ici, se pare d'une paire inspirée par les motifs cinétiques, évoquant les jeux de lumière et mouvement caractéristiques de l'artiste. Avec son design moderne et son cuir de qualité, cette pièce devient l'expression parfaite de la rencontre entre innovation et tradition, offrant une pièce essentielle à la garde-robe contemporaine.</p>
+              
+              <div>
+                  
+                <div class="couleur">
+                  <h4>Arrière de la chaussure</h4>
+                      <div class="colors">
+                    <div class="color" style="background-color: #434695" data-hex="#434695"></div>
+                      <div class="color" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color" style="background-color: #0b836d" data-hex="#0b836d"></div>
+                      <div class="color" style="background-color: #36964f" data-hex="#36964f"></div>
+                      <div class="color" style="background-color: #61b049" data-hex="#61b049"></div>
+                      <div class="color" style="background-color: #fee901" data-hex="#fee901"></div>
+                      <div class="color" style="background-color: #f2a124" data-hex="#f2a124"></div>
+                      <div class="color" style="background-color: #e65438" data-hex="#e65438"></div>
+                      <div class="color" style="background-color: #e43e3d" data-hex="#e43e3d"></div>
+                      <div class="color" style="background-color: #d63f5d" data-hex="#d63f5d"></div>
+                      <div class="color" style="background-color: #853336" data-hex="#853336"></div>
+                      <div class="color" style="background-color: #572431" data-hex="#572431"></div>
+                      <div class="color" style="background-color: #3f2b5d" data-hex="#3f2b5d"></div>
+                      </div>
+                    </div>
+                    <hr>
+                  <div class="couleur">
+                    <h4>Semelle de la chaussure</h4>
+                    <div class="colors">
+                     <div class="color2" style="background-color: #434695" data-hex="#434695"></div>
+                      <div class="color2" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color2" style="background-color: #214c6a" data-hex="#214c6a"></div>
+                      <div class="color2" style="background-color: #0b836d" data-hex="#0b836d"></div>
+                      <div class="color2" style="background-color: #36964f" data-hex="#36964f"></div>
+                      <div class="color2" style="background-color: #61b049" data-hex="#61b049"></div>
+                      <div class="color2" style="background-color: #fee901" data-hex="#fee901"></div>
+                      <div class="color2" style="background-color: #f2a124" data-hex="#f2a124"></div>
+                      <div class="color2" style="background-color: #e65438" data-hex="#e65438"></div>
+                      <div class="color2" style="background-color: #e43e3d" data-hex="#e43e3d"></div>
+                      <div class="color2" style="background-color: #d63f5d" data-hex="#d63f5d"></div>
+                      <div class="color2" style="background-color: #853336" data-hex="#853336"></div>
+                      <div class="color2" style="background-color: #572431" data-hex="#572431"></div>
+                      <div class="color2" style="background-color: #3f2b5d" data-hex="#3f2b5d"></div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <br>
+
+              <div class="d-flex align-items-center gap-3">
+                <div class="dropdown">
+                  <button type="button" class="btn btn-danger" id="sizeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Taille
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="sizeDropdown">
+                    <li><a class="dropdown-item" href="#">36</a></li>
+                    <li><a class="dropdown-item" href="#">37</a></li>
+                    <li><a class="dropdown-item" href="#">38</a></li>
+                    <li><a class="dropdown-item" href="#">39</a></li>
+                    <li><a class="dropdown-item" href="#">40</a></li>
+                    <li><a class="dropdown-item" href="#">41</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-danger">Ajouter</button>
+              </div>
+              
+                <div class="d-flex justify-content-left gap-3">
+                  <span class="rating">★★★★☆</span>
+                </div>
+              </div>
+
+
+
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+
+
+ <!-- Élément pour l'espace -->
+             
+              <div class="d-flex justify-content-around">
+                <img src="image1.png" class="rounded custom-img-size" alt="...">
+                <img src="leparc.png" class="rounded custom-img-size" alt="...">
+                <img src="image2.png" class="rounded custom-img-size" alt="...">
+            </div>
+            
+ 
+  <!-- Élément pour l'espace -->  
+
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+              <h2 class="fw-bolder mb-4 mt-4">Avis Clients </h2>
+                <div class="avis-body">
+                  <h5 class="avis-title">Marie-Claire</h5>
+                  <p class="avis-text">"Un mariage parfait entre l'art et la mode. Ces chaussures sont une œuvre d'art à porter, alliant esthétique unique et confort." </p>
+                </div><span class="rating">★★★★★</span></p>
+                <div class="avis-body">
+                  <h5 class="avis-title">Sarah</h5>
+                  <p class="avis-text"> "Des chaussures captivantes qui attirent l'attention à chaque pas. Confortables et originales, un vrai coup de cœur !"</p>
+                </div><span class="rating">★★★★☆</span></p> 
+                <div class="avis-body">
+                  <h5 class="avis-title">Alexandre</h5>
+                  <p class="avis-text">"Un hommage visuel réussi à l'œuvre de Julio Le Parc. Bien que très originales, j'aurais espéré un peu plus de confort et de durabilité." </p>
+                </div><span class="rating">★★★★★</span></p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  
+  <br></br>
+  <section class="">
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">SneakArt</h5>
+
+            <p>
+              "L’inspiration peut surgir n’importe où et n’importe quand. D’un élément d'architecture, d’un objet, d’un motif ou même simplement de la manière dont une personne se déplace. Si vous gardez les yeux ouverts, il y a toujours quelque chose à regarder qui va être inspirant."
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Découvrir</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-body">Notre collection</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Support</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-body">Aide</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Mentions légales</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #efeff0;">
+        © 2023 Sara Zamoumi Ouared
+
+      </div>
+
+    </footer>
+
+    <!-- Footer -->
+  </section>
+
+
+
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary-bs-red">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index1.html">Accueil</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="quisommenous.html">SneakArt World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="cart-icon" onmouseover="openPopup()"><img src="panier.png" class="bouton2" alt="Panier" /></button>
+            </li>
+              <div class="popup-container" id="popup">
+                  <span class="popup-close" onclick="closePopup()">&times;</span>
+                  <div class="popup-content">
+                      <div class="popup-title">Votre Panier</div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>Parc Harmonie</span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>Parc Luminosa</span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      
+                     
+                  </div>
+                  <div class="popup-actions">
+                    <button type="button" class="btn btn-danger" onclick="proceedToCheckout()">Commander</button>
+                    <br> <!-- Ajoute un petit espace entre les deux boutons -->
+                    <button type="button" class="btn btn-continue" onclick="continueShopping()">Continuer les achats</button>
+
+                </div>
+              </div>
+              
+              <script>
+                  function openPopup() {
+                      document.getElementById('popup').style.display = 'block';
+                  }
+              
+                  function closePopup() {
+                      document.getElementById('popup').style.display = 'none';
+                  }
+              
+                  function proceedToPayment() {
+                      alert('Redirection vers la page de paiement...');
+                      closePopup();
+                  }
+              </script>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+  <h2 class="titre">SneakArt World</h2>
+  
+  <div class="img-container">
+    <img src="baniere.png" class="img-fluid" alt="...">
+  </div>
+                <div class="texte">
+                  <h5 class="avis-title">Il était une fois à Paris ...</h5>
+                  <p class="avis-text">Sara, une jeune femme à l'âme enflammée par la mode, venait d’une famille très riche. Elle trouva dans ses amis Pauline et Jean-Jacques, deux esprits tout aussi passionnés par le graphisme, des compagnons de rêve pour donner vie à une vision audacieuse. Ensemble, animés par une passion commune pour l'art qui défie les conventions, ils se lancèrent dans une aventure entrepreneuriale qui marquerait le début d'une révolution dans le monde de la mode et de l'art. Pour une première collection, les trois ont visé l’artiste Julio Le Parc, avec la collection "Parc Masterpiece", transformant chaque sneaker en une expérience artistique. Avec des designs qui jouent sur les couleurs et le mouvement, ils ont créé plus que de simples chaussures : chaque paire est une invitation à voir et à vivre l'art au quotidien. Cette collection est leur façon de mélanger art, mode en offrant à chacun la chance de porter une œuvre d'art.
+                  </p>
+                </div>
+
+ <br>
+ 
+ <div class="img-container">
+  <img src="banniere.png" class="img-fluid" alt="...">
+</div>
+ <br>
+
+<section class="">
+  <!-- Footer -->
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">SneakArt</h5>
+
+          <p>
+            "L’inspiration peut surgir n’importe où et n’importe quand. D’un élément d'architecture, d’un objet, d’un motif ou même simplement de la manière dont une personne se déplace. Si vous gardez les yeux ouverts, il y a toujours quelque chose à regarder qui va être inspirant."
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Découvrir</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-body">Notre collection</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Support</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-body">Aide</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Mentions légales</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #efeff0;">
+      © 2023 Sara Zamoumi Ouared
+
+    </div>
+
+  </footer>
